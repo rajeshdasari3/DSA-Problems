@@ -21,6 +21,7 @@
 17. [Transpose Matrix](https://leetcode.com/problems/transpose-matrix/)
 18. [Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/)
 19. [Maximum Population Year](https://leetcode.com/problems/maximum-population-year/)
+20. [Determine Whether Matrix Can Be Obtained By Rotation](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/)
 
 
 ## Medium
