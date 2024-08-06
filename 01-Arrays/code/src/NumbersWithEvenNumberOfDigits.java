@@ -2,13 +2,8 @@ public class NumbersWithEvenNumberOfDigits {
     private static int findNumbers(int[] nums) {
         int evenCount = 0;
         for (int num: nums) {
-            int temp = num;
-            int count = 0;
-            while (temp != 0) {
-                temp /= 10;
-                count++;
-            }
-            if (count % 2 == 0) evenCount++;
+            String temp = String.valueOf(num);
+            if (temp.length() % 2 == 0) evenCount++;
         }
         return evenCount;
     }
