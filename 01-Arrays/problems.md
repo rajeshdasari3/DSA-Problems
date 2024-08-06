@@ -27,6 +27,7 @@
 23. [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 24. [Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/)
 25. [Plus One](https://leetcode.com/problems/plus-one/)
+26. [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 
 
 
