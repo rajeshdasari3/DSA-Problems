@@ -1,32 +1,26 @@
 public class MaximumPopulationYear {
     private static int maximumPopulation(int[][] logs) {
-        int start = 2049;
-        int end = 1950;
 
-        // find the first and last years of the log
+        // create a map using array
+        // to hold years from 1950 to 2050(inclusive)
+        int[] population = new int[101];
+
         for (int[] log: logs) {
-            if (log[0] < start) start = log[0];
-            if (log[1] > end) end = log[1];
+            int birth = log[0];
+            int death = log[1];
+            population[birth - 1950]++;
+            population[death - 1950]--;
         }
 
-        int maxPopulation = 0;
-        int ans = start;
-
-        // traverse from the first to the last year of the survey
-        for (int year = start; year < end; year++){
-            int population = 0;
-            // for each log check whether the current year is present in the logs
-            for (int[] log: logs) {
-                if (year >= log[0] && year < log[1]) {
-                    population++;
-                }
-            }
-            if (population > maxPopulation) {
-                ans = year;
-                maxPopulation = population;
+        int maxPopulation = 0, currPopulation = 0, year = 1950;
+        for (int i = 0; i < 101; i++) {
+            currPopulation += population[i];
+            if (currPopulation > maxPopulation) {
+                maxPopulation = currPopulation;
+                year = 1950 + i;
             }
         }
-        return ans;
+        return year;
     }
 
     public static void main(String[] args) {
