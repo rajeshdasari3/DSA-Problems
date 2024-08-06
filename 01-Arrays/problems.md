@@ -25,6 +25,7 @@
 21. [Two Sum](https://leetcode.com/problems/two-sum/)
 22. [Lucky Number In a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix/)
 23. [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+24. [Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/)
 
 
 
