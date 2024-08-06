@@ -28,6 +28,7 @@
 24. [Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/)
 25. [Plus One](https://leetcode.com/problems/plus-one/)
 26. [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
+27. [Minimum Cost to Move Chips to The Same Position](https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/)
 
 
 
