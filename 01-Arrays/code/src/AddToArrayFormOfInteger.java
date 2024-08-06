@@ -1,5 +1,6 @@
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class AddToArrayFormOfInteger {
     private static List<Integer> addToArrayForm(int[] num, int k) {
@@ -7,14 +8,19 @@ public class AddToArrayFormOfInteger {
         int idx = num.length - 1;
 
         while (idx >= 0 || k != 0) {
-            // check for the validity of idx
+            // validate the idx
             if (idx >= 0) {
                 k += num[idx];
+                idx--;
             }
-            ans.addFirst(k % 10);
+
+            // add at the end of the list
+            ans.add(k % 10);
             k /= 10;
-            idx--;
         }
+
+        // reverse the list
+        Collections.reverse(ans);
         return ans;
     }
 
